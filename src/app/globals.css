@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/*
+ * The DVIPC palette is sampled from the logo artwork: the maroon of "DV" and
+ * the navy of "IPC". Everything else is white, ink and neutral grey.
+ */
+@theme {
+  --color-brand-black: #000000;
+  --color-brand-gray: #6b7280;
+  /* "DV" in the logo. White text on it is 10.4:1. */
+  --color-brand-maroon: #800000;
+  --color-brand-maroon-dark: #5c0000;
+  /* "IPC" in the logo: the dark section ground. white/90 on it is 16:1. */
+  --color-brand-navy: #010427;
+  --color-brand-navy-light: #141a4d;
+  /* A light tint of the maroon, for accent words on navy and maroon grounds:
+     12:1 on navy, 6.4:1 on maroon. Never on white. */
+  --color-brand-rose: #f2b8b8;
+  /* Pale maroon wash, for tinted fills on the light ground. */
+  --color-brand-blush: #f8e9e9;
+
+  /* The hero's per-slide timer bar. Duration is set inline. */
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  /* Headlines: a high-contrast Garamond, for an editorial, law-firm voice. */
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  --font-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-soft: var(--soft);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-water-mark: var(--water-mark);
+
+  /* shadcn vocabulary */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Site vocabulary */
+  --canvas: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f5f5f7; /* inset fills: neutral */
+  --line: #e4e4ea;
+  --ink: #010427; /* body headings read in the logo navy */
+  --soft: #5b6070; /* body copy on white: 6.4:1 */
+  --brand: #800000; /* maroon: text and fills on light */
+  --brand-fg: #ffffff;
+
+  /* shadcn vocabulary */
+  --background: #ffffff;
+  --foreground: #010427;
+  --card: #ffffff;
+  --card-foreground: #010427;
+  --popover: #ffffff;
+  --popover-foreground: #010427;
+  --primary: #800000;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f7;
+  --secondary-foreground: #010427;
+  --muted: #f5f5f7;
+  --muted-foreground: #5b6070;
+  --accent: #f8e9e9;
+  --accent-foreground: #5c0000;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e4e4ea;
+  --input: #e4e4ea;
+  --ring: #800000;
+  --radius: 0.125rem; /* near-square: the site's corners are sharp */
+  --water-mark: oklch(97% 0 0); /* ≈ #F5F5F5 */
+}
+
+/* Section headline: the serif, large, set tight. */
+@utility heading-xl {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 2rem + 3vw, 4.75rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+
+/* Sub-headline inside a section. */
+@utility heading-md {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* Square, tracked-out buttons. Colours are added per use. */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.05rem 1.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+}
+
+/*
+ * The slash: the diagonal cut through "DV" in the logo, used as the site's
+ * one recurring shape. A parallelogram leaning the same way as the V.
+ */
+@utility slash {
+  clip-path: polygon(22% 0, 100% 0, 78% 100%, 0 100%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--surface-2);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--brand);
+    border: 2px solid var(--surface-2);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-maroon-dark);
+  }
+  ::-webkit-scrollbar-corner {
+    background: var(--surface-2);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: var(--brand) var(--surface-2);
+    }
+  }
+}
