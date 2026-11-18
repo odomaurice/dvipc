@@ -53,7 +53,7 @@ export default function TrainingPage() {
     <>
       <PageHero
         crumbs={[{ label: "Services", href: "/services" }, { label: "Training & capacity building" }]}
-        eyebrow="Training & capacity building"
+        eyebrow="04 / IP education & capacity building"
         title="Institutional and professional"
         accent="IP learning."
         lead="Workshops, customized training and capacity-building programmes for institutions, schools, professionals and organizations."

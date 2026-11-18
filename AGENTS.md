@@ -28,8 +28,9 @@ the short list of things that go wrong when they are not followed.
 - **No em dashes** (the long dash) anywhere in copy, comments or docs. Use a comma,
   colon or full stop, and "to" for ranges ("8AM to 4PM"). The one exception
   is the `next dev` block at the top of this file, which Next.js rewrites.
-- Every claim comes from the brief in [`docs/BRIEF.md`](docs/BRIEF.md). Use
-  only what it marks **[CONFIRMED]**. Anything **[IMPLIED]** is worded as
+- Every claim comes from the brief in [`docs/BRIEF.md`](docs/BRIEF.md),
+  including its 18 November addendum (services, CAC, contact details), which
+  wins where the two differ. Use only what it marks **[CONFIRMED]**. Anything **[IMPLIED]** is worded as
   expertise, not as a service offered, until DVIPC confirms it; anything
   **[MISSING]** is left out, never filled in.
 - Never publish the earlier drafts' invented material: the fictional
@@ -41,9 +42,15 @@ the short list of things that go wrong when they are not followed.
   registered spelling is still open (brief gap A1).
 - The founder is **Barr. Onyekachi Eriobu-Aniede**, Lead Consultant & Founder.
   Copy about the founder uses the name or the title, not pronouns.
-- Contact details live only in [`src/lib/site.ts`](src/lib/site.ts). Leave a
-  field `null` until DVIPC confirms it; the footer then shows a "being
-  confirmed" note instead.
+- Contact details live only in [`src/lib/site.ts`](src/lib/site.ts). Phone,
+  email (`info@danvickipc.com`) and address are confirmed; WhatsApp, hours and
+  socials stay empty until DVIPC confirms them. Do not assume the phone line
+  is on WhatsApp.
+- Service wording lives only in [`src/lib/services.ts`](src/lib/services.ts).
+  Pages, the homepage teaser and the registration form read from it. Respect
+  the addendum's open questions: industrial designs are "advisory and filing
+  support", valuation is "advisory", and no PSC or beneficial-ownership
+  filings are listed.
 
 ## Pages and sections
 
@@ -61,7 +68,12 @@ the short list of things that go wrong when they are not followed.
   starts dark.
 - Open sections with `SectionCaption`. Numbered folios (`index`) are for the
   homepage teasers only.
-- Calls to action that ask for contact go to `/contact`.
+- Calls to action that ask for contact go to `/contact`; ones that sign a
+  visitor up for a service or programme go to `/register`, optionally with
+  `?service=<short name>` to preselect it.
+- `/register` has no backend: it composes an email to the confirmed inbox.
+  Replace `submit` in `RegisterForm` with an API call when one exists, and add
+  a privacy notice before storing anything.
 
 ## Design
 
@@ -70,7 +82,7 @@ the short list of things that go wrong when they are not followed.
   maroon grounds, never on white.
 - **Editorial, not app-like.** Section headlines use `heading-xl` /
   `heading-md` (Cormorant Garamond) with an italic accent word; body and labels
-  are Montserrat. Buttons use the `btn` utility. Corners are square.
+  are Poppins. Buttons use the `btn` utility. Corners are square.
 - **The background is the column guides** (`PageBackdrop` + `ColumnGuides`):
   faint vertical hairlines on the content grid. Only the hero repeats them on a
   coloured band.

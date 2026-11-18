@@ -6,9 +6,9 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Add01Icon } from "@hugeicons/core-free-icons";
 import SectionCaption from "@/components/SectionCaption";
 
-// Every answer is assembled from statements in docs/BRIEF.md. Pricing,
-// turnaround times and jurisdictions are open questions there (gap list B),
-// so they are not answered here.
+// Every answer is assembled from statements in docs/BRIEF.md and its
+// 18 November addendum. Pricing, turnaround times and jurisdictions are open
+// questions there (gap list B), so they are not answered here.
 const ITEMS = [
   {
     q: "What does DVIPC do?",
@@ -20,7 +20,11 @@ const ITEMS = [
   },
   {
     q: "What can DVIPC help me protect?",
-    a: "Our four core services cover patents, trademarks and brands, copyright and creative rights, and IP portfolio management and advisory. Industrial designs and trade secrets are also part of our expertise, as are commercialization and licensing.",
+    a: "Trademarks and brands, patents and inventions, copyright and creative works, and industrial designs, the appearance of your products. We also help businesses protect trade secrets and confidential business information, and manage, license and commercialize their intellectual property.",
+  },
+  {
+    q: "Can DVIPC help me register my business?",
+    a: "Yes. Through our business registration and corporate support services, we assist entrepreneurs, startups, SMEs, and established businesses with Corporate Affairs Commission (CAC) pre-incorporation and post-incorporation matters, from name searches and incorporation to annual returns and changes to company particulars. The precise scope depends on the applicable CAC requirements and the client's corporate structure.",
   },
   {
     q: "What is DVIPC Academy?",
@@ -36,7 +40,7 @@ const ITEMS = [
   },
   {
     q: "Where is DVIPC based?",
-    a: "DVIPC is a Nigeria-based business with African intellectual property education and development ambitions.",
+    a: "Our office is at 14 Iroko Street, SIL Estate, Mbora District, Citec, Abuja. DVIPC is a Nigeria-based business with African intellectual property education and development ambitions.",
   },
 ];
 

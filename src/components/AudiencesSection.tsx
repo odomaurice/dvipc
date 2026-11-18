@@ -58,7 +58,7 @@ const JOURNEYS = [
         who: "Researchers & academic institutions",
         need: "IP protection, research commercialization, and institutional IP awareness.",
         cta: "Explore IP Commercialization",
-        href: "/services",
+        href: "/services/ip-strategy",
       },
     ],
   },

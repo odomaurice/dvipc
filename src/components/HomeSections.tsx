@@ -4,6 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import SectionCaption from "@/components/SectionCaption";
 import { Actions, RuledList } from "@/components/content";
+import { CATEGORIES } from "@/lib/services";
 
 /*
  * The homepage's teasers (brief 4.2): each introduces one part of DVIPC and
@@ -44,7 +45,7 @@ export function HomeIntro() {
             {
               n: "01",
               title: "IP Consulting & Protection",
-              body: "Registration, protection, management, advisory, and commercialization.",
+              body: "IP registration and protection, CAC business registration, IP management, advisory, and commercialization.",
               href: "/services",
               cta: "Request IP Support",
               cls: "bg-brand-navy",
@@ -102,39 +103,93 @@ export function HomeServices() {
         <div className="grid gap-8 lg:grid-cols-[6fr_6fr] lg:items-end lg:gap-16">
           <div>
             <SectionCaption tone="dark" index={2}>
-              IP services
+              Our services
             </SectionCaption>
             <h2 className="mt-6 heading-xl">
-              Practical registration, protection and{" "}
-              <em className="text-brand-rose">advisory</em>
+              From incorporation to{" "}
+              <em className="text-brand-rose">protected assets</em>
             </h2>
           </div>
           <p className="text-lg leading-8 text-white/85">
-            From patents and trademarks to copyrights and strategic IP
-            advisory, we help secure and maximize the value of intellectual
-            assets.
+            Intellectual property services are our specialism, complemented
+            by CAC business registration, so we can serve a business from
+            establishment through brand protection, IP management, and growth.
           </p>
         </div>
-        <div className="mt-16">
-          <RuledList
-            tone="navy"
-            items={[
-              { title: "Patent Filing & Prosecution", href: "/services" },
-              { title: "Trademark Registration & Brand Protection", href: "/services" },
-              { title: "Copyright Registration & Creative Rights", href: "/services" },
-              { title: "IP Portfolio Management & Advisory", href: "/services" },
-              { title: "Commercialization & Advisory", href: "/commercialization" },
-              { title: "Training & Capacity Building", href: "/training" },
-            ]}
-          />
+
+        {/* Named one by one, so every service is visible from the homepage. */}
+        <div className="mt-16 grid gap-16 lg:grid-cols-2 lg:gap-12">
+          {HOME_GROUPS.map((g) => (
+            <div key={g.title}>
+              <p className="font-serif text-2xl text-brand-rose italic">{g.n}</p>
+              <h3 className="mt-3 heading-md">{g.title}</h3>
+              <p className="mt-3 max-w-md text-base leading-7 text-white/80">{g.line}</p>
+              <div className="mt-8">
+                <RuledList tone="navy" columns={1} items={g.items} />
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="mt-12">
-          <Actions tone="navy" primary={{ label: "Request IP Support", href: "/contact" }} secondary={{ label: "All services", href: "/services" }} />
+
+        <div className="mt-16 grid gap-x-12 border-t border-white/20 pt-10 sm:grid-cols-2">
+          <p className="text-[0.7rem] font-semibold tracking-[0.24em] text-white/70 uppercase sm:col-span-2">
+            Also from DVIPC
+          </p>
+          {CATEGORIES.slice(2).map((c) => (
+            <Link
+              key={c.href}
+              href={c.href}
+              className="group mt-5 flex items-baseline justify-between gap-6 transition-colors hover:text-brand-rose"
+            >
+              <span>
+                <span className="block font-serif text-2xl font-medium">{c.title}</span>
+                <span className="mt-1 block text-[0.95rem] leading-7 text-white/75">{c.line}</span>
+              </span>
+              <HugeiconsIcon
+                icon={ArrowRight01Icon}
+                size={18}
+                strokeWidth={2}
+                className="shrink-0 text-brand-rose transition-transform group-hover:translate-x-1"
+              />
+            </Link>
+          ))}
+        </div>
+
+        <div className="mt-14">
+          <Actions tone="navy" primary={{ label: "Request IP Support", href: "/register" }} secondary={{ label: "All services", href: "/services" }} />
         </div>
       </div>
     </section>
   );
 }
+
+// The homepage names the flagship services individually (addendum, 18 Nov):
+// the four registrable IP rights, and CAC pre- and post-incorporation.
+const IP_HREF = "/services/intellectual-property";
+const CAC_HREF = "/services/business-registration";
+const HOME_GROUPS = [
+  {
+    n: "01",
+    title: "Intellectual Property Services",
+    line: "Protect your ideas, inventions, brands, creative works, and designs.",
+    items: [
+      { title: "Trademark Registration & Brand Protection", body: "Availability searches, Nice Classification, registration, opposition and renewal.", href: IP_HREF },
+      { title: "Patent Filing & Prosecution", body: "Patentability assessment, application preparation, filing and prosecution support.", href: IP_HREF },
+      { title: "Copyright Registration & Creative Rights", body: "Registration, ownership, licensing and assignment of creative works.", href: IP_HREF },
+      { title: "Industrial Design Registration & Protection", body: "Protecting the appearance and aesthetic appeal of products.", href: IP_HREF },
+    ],
+  },
+  {
+    n: "02",
+    title: "CAC Pre- & Post-Incorporation",
+    line: "Establish, structure, and maintain your business through Corporate Affairs Commission (CAC) services.",
+    items: [
+      { title: "Pre-Incorporation Services", body: "Name searches and reservation, business name registration, and company incorporation.", href: CAC_HREF },
+      { title: "Post-Incorporation Services", body: "Annual returns, changes to directors, shareholding and particulars, and compliance.", href: CAC_HREF },
+      { title: "Business Structuring & Corporate Advisory", body: "Business structure, ownership arrangements, and corporate governance.", href: CAC_HREF },
+    ],
+  },
+];
 
 export function HomeAcademy() {
   return (
@@ -187,8 +242,8 @@ export function HomeFounder() {
           <Image
             src="/brand/founder.webp"
             alt="Barr. Onyekachi Eriobu-Aniede, Lead Consultant and Founder of DVIPC"
-            width={600}
-            height={891}
+            width={896}
+            height={1120}
             sizes="(min-width: 640px) 384px, calc(100vw - 40px)"
             className="relative h-auto w-full"
           />

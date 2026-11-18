@@ -58,7 +58,7 @@ export default function CtaSection() {
           className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
           <Link
-            href="/contact"
+            href="/register"
             className="btn bg-white text-brand hover:bg-brand-navy hover:text-white"
           >
             Book an IP Consultation

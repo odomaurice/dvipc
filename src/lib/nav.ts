@@ -13,7 +13,7 @@ export type NavLink = {
 
 export const MAIN: NavLink[] = [
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services", also: ["/commercialization", "/training"] },
+  { label: "Services", href: "/services" },
   { label: "Academy", href: "/academy" },
   { label: "Founder", href: "/founder" },
   { label: "Resources", href: "/resources" },
@@ -22,11 +22,12 @@ export const MAIN: NavLink[] = [
 
 export const FOOTER: { title: string; links: NavLink[] }[] = [
   {
-    title: "Consulting",
+    title: "Services",
     links: [
-      { label: "IP services", href: "/services" },
-      { label: "Commercialization & advisory", href: "/commercialization" },
-      { label: "Training & capacity building", href: "/training" },
+      { label: "Intellectual property", href: "/services/intellectual-property" },
+      { label: "Business registration (CAC)", href: "/services/business-registration" },
+      { label: "IP strategy & commercialization", href: "/services/ip-strategy" },
+      { label: "Training & capacity building", href: "/services/training" },
     ],
   },
   {
@@ -44,6 +45,7 @@ export const FOOTER: { title: string; links: NavLink[] }[] = [
       { label: "About DVIPC", href: "/about" },
       { label: "Founder & leadership", href: "/founder" },
       { label: "Contact", href: "/contact" },
+      { label: "Register", href: "/register" },
     ],
   },
 ];

@@ -9,7 +9,7 @@ import {
 } from "@hugeicons/core-free-icons";
 import FaqSection from "@/components/FaqSection";
 import PageHero from "@/components/PageHero";
-import { Label, PageSection, RuledList } from "@/components/content";
+import { Actions, Label, PageSection, RuledList } from "@/components/content";
 import { CONTACT, SITE, hasDirectContact } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   description: "Connect with DVIPC for consultation, training, or partnership.",
 };
 
-// The enquiry types of brief 4.11, grouped. There is no form: the brief has
-// no confirmed form recipient (6.2), so enquiries go to the details below
-// once they are confirmed.
+// The enquiry types of brief 4.11 and the services addendum, grouped. The
+// registration form at /register composes an email to the confirmed inbox.
 const ENQUIRIES = [
-  { title: "IP consultation", body: "Trademarks, patents, copyright, portfolio management and advisory.", href: "/services" },
-  { title: "Commercialization & advisory", body: "Licensing, commercialization planning and IP strategy.", href: "/commercialization" },
-  { title: "Training", body: "Institutional, professional and customized IP training.", href: "/training" },
+  { title: "Intellectual property", body: "Trademarks, patents, copyright and industrial designs.", href: "/services/intellectual-property" },
+  { title: "Business registration", body: "CAC pre-incorporation, post-incorporation and corporate support.", href: "/services/business-registration" },
+  { title: "IP strategy & commercialization", body: "Audits, trade secrets, licensing and technology transfer.", href: "/services/ip-strategy" },
+  { title: "Training", body: "Institutional, professional and customized IP training.", href: "/services/training" },
   { title: "DVIPC Academy", body: "Programmes for students, educators and young lawyers.", href: "/academy" },
   { title: "School partnerships", body: "Bringing IP Explorer Club to your school.", href: "/academy/ip-explorer-club" },
   { title: "Educational partnerships", body: "IP Adventure and other learning resources.", href: "/academy/ip-adventure" },
@@ -41,7 +41,9 @@ export default function ContactPage() {
         title="Let's talk about what you"
         accent="create."
         lead="Connect with DVIPC for consultation, training, or partnership."
-      />
+      >
+        <Actions tone="navy" primary={{ label: "Register With DVIPC", href: "/register" }} />
+      </PageHero>
 
       <PageSection caption="How we can help" title="What would you like to" accent="discuss?">
         <div className="grid gap-16 lg:grid-cols-[7fr_5fr]">

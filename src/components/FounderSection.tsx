@@ -89,8 +89,8 @@ export default function FounderSection({ asPage = false }: { asPage?: boolean })
           <Image
             src="/brand/founder.webp"
             alt="Barr. Onyekachi Eriobu-Aniede, Lead Consultant and Founder of DVIPC"
-            width={600}
-            height={891}
+            width={896}
+            height={1120}
             sizes="(min-width: 640px) 448px, calc(100vw - 40px)"
             className="relative h-auto w-full"
           />

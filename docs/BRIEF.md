@@ -470,3 +470,78 @@ Danvick Intellectual Property Consult is an intellectual property consulting and
 Strategic recommendation: Build the website around these two pillars rather than treating education as a minor service. The consulting business generates professional engagements, while the Academy and grassroots initiatives establish DVIPC's distinctive identity, reach, credibility, and long-term impact.
 
 This is the central distinction that should guide the website's architecture, visual hierarchy, messaging, and calls to action.
+
+---
+
+## Addendum, 18 November 2026: services, CAC and contact details
+
+Supplied by DVIPC after the brief above. Where this addendum and the brief
+differ, the addendum wins. Its service content is treated as **[CONFIRMED]**,
+except for the four open questions at the end.
+
+### Contact details [CONFIRMED]
+
+- Phone: +234 812 284 0413
+- Email: info@danvickipc.com
+- Office address: 14 Iroko Street, SIL Estate, Mbora District, Citec, Abuja
+
+Still missing: WhatsApp number, business hours, social media URLs.
+
+### Service categories
+
+Recommended service navigation:
+
+1. **Intellectual Property Services.** Protect your ideas, inventions, brands, creative works, and designs.
+2. **Business Registration & Corporate Services.** Establish, structure, and maintain your business through CAC services.
+3. **IP Strategy & Commercialization.** Manage, commercialize, and maximize the value of intellectual assets.
+4. **IP Education & Capacity Building.** Learn, develop expertise, and build an IP-conscious community through DVIPC Academy.
+
+Intellectual Property Services is the flagship category; Business Registration & Corporate Support is complementary.
+
+| Main service category | Services |
+| --- | --- |
+| Intellectual Property Registration | Trademarks, patents, copyrights, industrial designs |
+| IP Strategy & Management | IP audits, portfolio management, trade secrets, IP advisory |
+| IP Commercialization | Licensing, assignment, valuation advisory, technology transfer |
+| Business Registration & Corporate Support | CAC pre-incorporation, post-incorporation, corporate compliance |
+| IP Education & Capacity Building | DVIPC Academy, workshops, webinars, institutional training |
+| Innovation & Policy Advisory | IP policy, research, stakeholder engagement, innovation management |
+
+### 1. Intellectual Property Services
+
+**Comprehensive Intellectual Property Solutions.** Protecting an idea is only the beginning. At Danvick Intellectual Property Consult, we help individuals, businesses, innovators, creators, and institutions identify, protect, manage, and maximize the value of their intellectual assets.
+
+**Trademark Registration & Brand Protection.** We help businesses protect the distinctive identities that set them apart in the marketplace. Our services cover trademark searches, classification, application preparation, registration support, opposition-related advisory, and trademark portfolio management. Services include: trademark availability searches; trademark application and registration; Nice Classification advisory; trademark opposition support; trademark renewal advisory; brand protection strategy; trademark portfolio management.
+
+**Patent Filing & Prosecution.** We support inventors, researchers, entrepreneurs, and technology-driven businesses in navigating the patent protection process. Our services help clients assess inventions, understand patentability requirements, prepare filing documentation, and pursue appropriate protection strategies. Services include: preliminary patentability assessment; invention disclosure advisory; patent application preparation and filing support; patent prosecution support; patent portfolio advisory; patent commercialization guidance.
+
+**Copyright Registration & Creative Rights Protection.** We assist authors, publishers, creatives, educators, businesses, and digital content creators in understanding and protecting their copyright interests. We provide guidance on copyright registration, ownership, licensing, assignment, and management of creative works. Services include: copyright registration support; copyright ownership advisory; copyright licensing and assignment; creative rights management; copyright commercialization advisory; copyright awareness and education.
+
+**Industrial Design Registration & Protection: Protecting the Appearance and Aesthetic Appeal of Products.** The appearance of a product can be as commercially valuable as its technical function. We assist designers, manufacturers, entrepreneurs, and businesses in understanding and protecting the visual features that distinguish their products in the marketplace. Services include: industrial design protection advisory; preliminary registrability assessment; industrial design application preparation and filing support; design portfolio management; industrial design protection strategy; advisory on design ownership and commercialization.
+
+**Trade Secrets & Confidential Business Information.** We help businesses identify commercially valuable confidential information and develop appropriate strategies for protecting their proprietary knowledge, processes, formulas, methods, and business information. Services include: trade secret identification; confidentiality and non-disclosure advisory; trade secret protection strategies; employee and business confidentiality frameworks; trade secret management advisory.
+
+**IP Portfolio Management & Strategic Advisory.** We help organizations move beyond individual registrations to develop a structured approach to identifying, managing, protecting, and leveraging their intellectual property assets. Services include: intellectual property audits; IP portfolio reviews; IP strategy development; IP asset identification; IP ownership and documentation advisory; IP commercialization planning; licensing and assignment advisory.
+
+**IP Commercialization, Licensing & Technology Transfer.** Intellectual property should create value beyond ownership. We help innovators, businesses, and institutions explore opportunities to commercialize their intellectual assets through strategic partnerships, licensing, and technology transfer. Services include: IP commercialization strategies; licensing advisory; assignment advisory; technology transfer support; IP valuation advisory; innovation-to-market strategies.
+
+### 2. CAC Pre-Incorporation & Post-Incorporation Services
+
+**Business Registration & Corporate Support: From Business Idea to Legally Recognized Enterprise.** Establishing a business involves more than choosing a name. It requires the right legal structure, appropriate registration, and ongoing corporate compliance. Through our business registration and corporate support services, DVIPC assists entrepreneurs, startups, SMEs, and established businesses with Corporate Affairs Commission (CAC) pre-incorporation and post-incorporation matters.
+
+**A. Pre-Incorporation Services.** Helping entrepreneurs establish their businesses on a sound legal foundation. Services include: business name availability search and reservation; company name availability search and reservation; business name registration; private company limited by shares incorporation; company incorporation documentation; preparation and filing of incorporation documents; advisory on appropriate business structures; guidance on objects and scope of business activities; shareholding and ownership structure advisory; registration of relevant business particulars.
+
+**B. Post-Incorporation Services.** Supporting businesses beyond incorporation to maintain proper corporate records and meet statutory obligations. Services include: filing of annual returns; changes in directors and company secretaries; changes in registered office address; changes in shareholding and allotment of shares; increase or reduction of share capital; changes to company particulars; filing of resolutions and statutory notices; changes to company name; alteration of memorandum and articles of association; company status searches and corporate information retrieval; business name changes and updates; corporate compliance advisory.
+
+The precise scope of services will depend on the applicable CAC requirements and the client's corporate structure.
+
+**C. Business Structuring & Corporate Advisory.** We provide guidance to entrepreneurs and businesses seeking to establish appropriate legal structures, organize ownership arrangements, and maintain sound corporate governance practices. Services include: business structure advisory; company formation guidance; shareholding and ownership structure advisory; corporate documentation; corporate compliance support; business restructuring advisory.
+
+### Open questions on this addendum [MISSING: needs user input]
+
+1. CAC services: Does DVIPC handle both business name registration and company incorporation, including limited liability companies?
+2. Corporate services: Does DVIPC also handle PSC (Persons with Significant Control) filings, beneficial ownership updates, and regulatory compliance matters?
+3. Industrial designs: Does DVIPC currently undertake industrial design filing and prosecution, or should this initially be presented as advisory and filing support?
+4. IP commercialization: Does DVIPC provide direct valuation services, or strategic valuation advisory and referral support?
+
+Until answered, the site uses the addendum's own wording: industrial designs as "advisory and filing support", valuation as "IP valuation advisory", and no PSC or beneficial-ownership filings.
